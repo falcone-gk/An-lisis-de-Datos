@@ -38,3 +38,4 @@ A continuación se muestran los resultados de todas las pruebas.
     #Muestra todas las variables.
     print(my_class)
 ```
+![Imagen de la base de datos](/images/show_data.png)
