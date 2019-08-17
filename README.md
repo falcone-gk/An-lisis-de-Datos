@@ -1,11 +1,11 @@
 # Data-Analysis
 Este código se encarga de obtener todas las características estadísticas básicas que se pueden obtener de una base de datos, desde la media hasta la desviación estándar o incluso más, según se vaya desarrollando. Además se irá agregando más métodos para la realización de gráficos de datos para su respectivo análisis.
 
-# Prerrequisitos
+## Prerrequisitos
 - El código corre en **Python 3**.
 - Es necesario la instalación de la librería **Matplotlib**.
 
-# Corriendo el Test
+## Corriendo el Test
 Para correr el test es necesario tener instalada la librería **numpy** (usada para generar datos aleatorios) y tener en una misma carpeta los archivos **data_analysis.py** y **test.py** en un mismo folder.
 
 Lo que realiza el test es mostrar todas los métodos disponibles y cómo se usan.
