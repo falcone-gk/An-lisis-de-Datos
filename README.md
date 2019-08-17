@@ -10,6 +10,7 @@ Para correr el test es necesario tener instalada la librería **numpy** (usada p
 
 Lo que realiza el test es mostrar todas los métodos disponibles y cómo se usan.
 
+### Generación de datos
 En la primera parte del test simplemente se importa la librería, se generan datos aleatorios, el índice a usar y se crea el objeto Data.
 ```python
 
@@ -33,6 +34,7 @@ def main():
     my_class = das.Data(data)
 ```
 
+### Obtención de estadísticos básicos
 A continuación se muestran los resultados de todas las pruebas.
 ```python
     #Muestra todas las variables.
@@ -67,3 +69,12 @@ Sin embargo, si se quiere un resumen de de las variables que uno quiere con sus 
     print(my_class.describe(["Valores de x", "Valores de y", "Valores de z"]))
 ```
 ![imagen de la descripción de las variables](/images/description.png)
+
+### Gráfico de variables
+En esta sección se mostrarán los tipos de gráficos que se pueden obtener del objeto Data.
+
+```python
+    figura = my_class.plot("Indice", "Valores de x", title="Prueba de gráfico 1")
+    figura.savefig("images/test1.png")
+```
+![Imagen de los valores de x](/images/test1.png)
