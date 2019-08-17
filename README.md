@@ -41,3 +41,29 @@ A continuación se muestran los resultados de todas las pruebas.
 ![Imagen de la base de datos](/images/show_data.png)
 
 Debido a espacio solo se muestra una parte de la data, pero lo que se propone es a mostrar todos los datos.
+
+La siguiente parte de código solo muestra los valores de la variable que se desea:
+´´´python
+    #Muestra los datos de la variable deseada.
+    print(my_class["Valores de x"])
+´´´
+![Imágen de la variable deseada](/images/show_var.png)
+
+Para obtener los estadísticos principales de cada variable lo puedes hacer llamando uno por uno, los siguientes métodos están disponibles:
+
+- [max_val](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L159)
+- [min_val](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L167)
+- [mean](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L193)
+- [q_one](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L209)
+- [median](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L200)
+- [q_third](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L221)
+- [q_range](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L235)
+- [std_dev](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L251)
+- [variance](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L241)
+
+Sin embargo, si se quiere un resumen de de las variables que uno quiere con sus estadísticos principales, entonces aquí se muestra el código que lo realiza:
+´´´python
+    #Muestras Los estadísticos básicos de una variable (media, quartiles, desviación estándar, etc.)
+    print(my_class.describe(["Valores de x", "Valores de y", "Valores de z"]))
+´´´
+![imagen de la descripción de las variables](/images/description.png)
