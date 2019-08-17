@@ -31,17 +31,25 @@ def main():
     print(my_class.describe(["Valores de x", "Valores de y", "Valores de z"]))
 
     #Grafica las variables.
-    my_class.plot("Indice", "Valores de x")
+    figura = my_class.plot("Indice", "Valores de x", title="Prueba de gráfico 1")
+    figura.savefig("images/test1.png")
 
     #Realiza un gráfico de puntos.
-    my_class.scatter_plot("Valores de y", "Valores de x")
+    figura = my_class.scatter_plot("Valores de y", "Valores de x", title="Prueba de gráfico 2")
+    figura.savefig("images/test2.png")
 
     #Realiza gráficos de puntos comparando entre las variables deseadas.
-    my_class.relation(["Valores de x", "Valores de y", "Valores de z"])
+    figura = my_class.relation(["Valores de x", "Valores de y", "Valores de z"])
+    figura.savefig("images/test3.png")
 
     #Realización de varios gráficos.
-    my_class.mult_plot("Indice", ["Valores de x", "Valores de y", "Valores de z"],
-                       separate=False)
+    figura = my_class.mult_plot("Indice", ["Valores de x", "Valores de y", "Valores de z"])
+    figura.savefig("images/test4.png")
+
+    #Realización de varios gráficos por separado.
+    figura = my_class.mult_plot("Indice", ["Valores de x", "Valores de y", "Valores de z"],
+                                separate=True)
+    figura.savefig("images/test5.png")
 
 if __name__ == "__main__":
     main()
