@@ -73,8 +73,34 @@ Sin embargo, si se quiere un resumen de de las variables que uno quiere con sus 
 ### Gráfico de variables
 En esta sección se mostrarán los tipos de gráficos que se pueden obtener del objeto Data.
 
+#### Gráfico lineal:
 ```python
     figura = my_class.plot("Indice", "Valores de x", title="Prueba de gráfico 1")
-    figura.savefig("images/test1.png")
 ```
 ![Imagen de los valores de x](/images/test1.png)
+
+##### Gráfico de puntos:
+```python
+    figura = my_class.scatter_plot("Valores de y", "Valores de x", title="Prueba de gráfico 2")
+```
+![Imagen de gráfico de puntos](/images/test2.png)
+
+#### Comparación de gráfico de puntos entre varias variables
+```python
+    figura = my_class.relation(["Valores de x", "Valores de y", "Valores de z"])
+```
+![Imagen de comparación de gráfico de puntos entre varias variables](/images/test3.png)
+
+#### Graficar varias variables en un solo recuadro
+```python
+    figura = my_class.mult_plot("Indice", ["Valores de x", "Valores de y", "Valores de z"])
+```
+![Imagen de gráfico de varias variables](/images/test4.png)
+
+#### Graficas varias variables por separado
+En este caso se observarán varias variables pero en distintos recuadros (axes).
+```python
+    figura = my_class.mult_plot("Indice", ["Valores de x", "Valores de y", "Valores de z"],
+                                separate=True)
+```
+![Imagen de varias variables por separado](/images/test5.png)
