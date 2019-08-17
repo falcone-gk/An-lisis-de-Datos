@@ -39,3 +39,5 @@ A continuación se muestran los resultados de todas las pruebas.
     print(my_class)
 ```
 ![Imagen de la base de datos](/images/show_data.png)
+
+Debido a espacio solo se muestra una parte de la data, pero lo que se propone es a mostrar todos los datos.
