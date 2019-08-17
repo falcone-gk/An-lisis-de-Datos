@@ -43,10 +43,10 @@ A continuación se muestran los resultados de todas las pruebas.
 Debido a espacio solo se muestra una parte de la data, pero lo que se propone es a mostrar todos los datos.
 
 La siguiente parte de código solo muestra los valores de la variable que se desea:
-´´´python
+```python
     #Muestra los datos de la variable deseada.
     print(my_class["Valores de x"])
-´´´
+```
 ![Imágen de la variable deseada](/images/show_var.png)
 
 Para obtener los estadísticos principales de cada variable lo puedes hacer llamando uno por uno, los siguientes métodos están disponibles:
@@ -62,8 +62,8 @@ Para obtener los estadísticos principales de cada variable lo puedes hacer llam
 - [variance](https://github.com/falcone-gk/Data-Analysis/blob/fdbd76dd7aef114880526064586ba0f542ba1f79/data_analysis.py#L241)
 
 Sin embargo, si se quiere un resumen de de las variables que uno quiere con sus estadísticos principales, entonces aquí se muestra el código que lo realiza:
-´´´python
+```python
     #Muestras Los estadísticos básicos de una variable (media, quartiles, desviación estándar, etc.)
     print(my_class.describe(["Valores de x", "Valores de y", "Valores de z"]))
-´´´
+```
 ![imagen de la descripción de las variables](/images/description.png)
