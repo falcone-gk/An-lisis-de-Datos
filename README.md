@@ -104,3 +104,6 @@ En este caso se observarán varias variables pero en distintos recuadros (axes).
                                 separate=True)
 ```
 ![Imagen de varias variables por separado](/images/test5.png)
+
+## Autor
+- **Enzo Enrique Falcón Astuhuayua**
